@@ -7,16 +7,28 @@ header {
     height: 50px;
     border-bottom: 1px solid ;
 }
+
 .titulo{
     color: darkred;
 }
-.logo{
-    text-align: right;
-    position: relative;
-}
+
 .menu-opcoes li{
     display: inline-block;
 }
-.button{
-    color: blue;
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+    width: 100px;
+    border-radius: 50px;
+    font-family: 'Mea Culpa', sans-serif;
+    background-color: rgba(255, 255, 255, 0.238);
+    border: none;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 20px;
+    display: inline-block;
 }
