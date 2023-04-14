@@ -48,7 +48,7 @@ h1 {
 }
 
 #cherryheader:hover:not(.active) {
-    color: #247289;
+    color: #b37a7a;;
 }
 
 .container--header {
@@ -66,7 +66,7 @@ h1 {
     align-items: center;
 }
 .buttons:hover:not(.active) {
-    background-color: #247289;
+    background-color: #b37a7a;
 }
 
 .buttons {
