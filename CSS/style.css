@@ -143,16 +143,6 @@ a {
     width: 200px;
 }
 
-.plusbttn{
-    font-size: 23px;
-    border-radius: 18px;
-    border: none;
-    background-color: #863D3D;
-    color: rgb(235, 248, 255);
-    width: 150px;
-    padding: 20px;
-}
-
 .plusbttn:hover:not(.active) {
     background-color: #b37a7a;
 }
@@ -199,13 +189,13 @@ a {
     font-size: 16px;
     border: none;
     cursor: pointer;
-  }
+}
   
   .dropdown {
     position: relative;
     display: inline-block;
     -webkit-text-fill-color: rgb(235, 248, 255);
-  }
+}
   
   .dropdown-content {
     display: none;
@@ -215,14 +205,14 @@ a {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 10px;
-  }
+}
 
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
+}
   
   .dropdown-content a:hover {
     background-color: #b37a7ac2;
@@ -231,5 +221,43 @@ a {
   
   .dropdown:hover .dropdown-content {
     display: block;
-  }
+}
   
+  .card {
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 11px;
+    border-radius: 10px;
+}
+
+  .cardimage{
+    border-radius: 8px;
+}
+  
+  .price {
+    color: rgb(41, 132, 160);
+    font-size: 22px;
+    font-weight: bold;
+}
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: rgb(235, 248, 255);
+    background-color: #863D3D;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+}
+    .card:hover {
+    transform: scale(1.1);
+}
+
+    .card button:hover {
+    background-color: #b37a7ac2;
+}
