@@ -54,59 +54,9 @@
             <img src="Img/CB Logo sem fundo.png" id="logo--1" />
         </section>
     </div>
-
-<br><br>
-    <center>
-      <div class="slide-content" style="max-width:1000px">
-        <img class="Slides" src="img/melhores doces da regiao.jpg" style="width:100%">
-        <img class="Slides" src="img/nossos doces.jpg" style="width:100%">
-        <img class="Slides" src="img/promocao do dia.jpg" style="width:100%">
-      </div>
-      <br>
-      <div class="slide-center">
-        <div class="slide-section">
-          <button class="slide-button" onclick="plusDivs(-1)">❮ Prev</button>
-          <button class="slide-button" onclick="plusDivs(1)">Next ❯</button>
-        </div>
-        <br>
-        <button class="slide-123button demo" onclick="currentDiv(1)">1</button> 
-        <button class="slide-123button demo" onclick="currentDiv(2)">2</button> 
-        <button class="slide-123button demo" onclick="currentDiv(3)">3</button> 
-      </div>
-      
-      <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
-      
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
-      }
-      
-      function currentDiv(n) {
-        showDivs(slideIndex = n);
-      }
-      
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("Slides");
-        var dots = document.getElementsByClassName("demo");
-        if (n > x.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" slide-red", "");
-        }
-        x[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " slide-red";
-      }
-      </script>
-    </center>
-
+    
 
     <div class="produtos--container">
-        
         <div class="produtos">
         </div>
         <h1 id="doces">DOCES</h1>
@@ -117,35 +67,36 @@
                 <h3>Brigadeiro</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
+                    target="_blank">COMPRAR</a></button></p>
               </div>
               <div class="card">
                 <img src="img/BEIJINHO.png"style="width:100%" class="cardimage">
                 <h3>Beijinho</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/CAJUZINHO.jpg"style="width:100%" class="cardimage">
                 <h3>Cajuzinho</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/BICHO DE PÉ.jpg"style="width:100%" class="cardimage">
                 <h3>Bicho de Pé</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/CAMAFEU.jpg"style="width:100%" class="cardimage">
                 <h3>Camafeu</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
         </div>
         <div class="produtos">
@@ -154,35 +105,35 @@
                 <h3>Quindim</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/PUDIM.jpg"style="width:100%" class="cardimage">
                 <h3>Pudim</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/TRUFAS.jpg"style="width:100%" class="cardimage">
                 <h3>Trufas</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/CASADINHO.jpg"style="width:100%" class="cardimage">
                 <h3>Casadinho</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/OLHO DE SOGRA.jpg"style="width:100%" class="cardimage">
                 <h3>Olho de Sogra</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
         </div>
 
@@ -197,35 +148,35 @@
                 <h3>Coxinha de Frango</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/EMPADINHA 1.jpg"style="width:100%" class="cardimage">
                 <h3>Empadinha de Frango</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/QUIBE.jpg"style="width:100%" class="cardimage">
                 <h3>Quibe</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/ESFIRRA 1.jpg"style="width:100%" class="cardimage">
                 <h3>Esfirra de Frango</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/RISSOLE.jpg"style="width:100%">
                 <h3>Rissole</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
         </div>
         <div class="produtos">
@@ -234,35 +185,35 @@
                 <h3>Croquete</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/ENROLADINHO PRESUNTO E QUEIJO.jpg"style="width:100%" class="cardimage">
                 <h3>Enroladinho de Presunto e Queijo</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/ENROLADINHO SALSICHA.jpg"style="width:100%" class="cardimage">
                 <h3>Enroladinho de Salsicha</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/PASTELZINHO.jpg"style="width:100%" class="cardimage">
                 <h3>Pastelzinho</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/BOLINHA DE QUEIJO 1.jpg"style="width:100%" class="cardimage">
                 <h3>Bolinha de Queijo</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
         </div>
 
@@ -277,35 +228,35 @@
                 <h3>Chocolate</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/MORANGO.jpg"style="width:100%" class="cardimage">
                 <h3>Morango</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/CENOURA.jpg"style="width:100%" class="cardimage">
                 <h3>Cenoura</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/RED VELVET.jpg"style="width:100%" class="cardimage">
                 <h3>Red Velvet</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/FORMIGUEIRO.jpg"style="width:100%" class="cardimage">
                 <h3>Formigueiro</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
         </div>
         <div class="produtos">
@@ -314,35 +265,35 @@
                 <h3>Laranja</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/COCO.png"style="width:100%" class="cardimage">
                 <h3>Coco</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/LIMÃO.jpg"style="width:100%" class="cardimage">
                 <h3>Limão</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/CUPCAKE.jpg"style="width:100%" class="cardimage">
                 <h3>Cup Cake</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
               <div class="card">
                 <img src="img/BOLO SALGADO.jpg"style="width:100%" class="cardimage">
                 <h3>Salgado</h3>
                 <p class="price">$19.99</p>
                 <p>100 Unidades</p>
-                <p><button>Add to Cart</button></p>
+                <p><button>COMPRAR</button></p>
               </div>
         </div>
 
@@ -353,11 +304,78 @@
         <h1 id="combfes">OUTROS</h1>
         <br><br>
         <div class="produtos">
-            <div class="produtos--div" id="vegan"> Vegano</div>
-            <div class="produtos--div" id="diet"> Diet</div>
-            <div class="produtos--div" id="light"> Light</div>
+            <div class="card">
+                <img src="img/VEGANO.jpg"style="width:100%" class="cardimage">
+                <h3>Vegano</h3>
+                <p class="price">$19.99</p>
+                <p>100 Unidades</p>
+                <p><button>COMPRAR</button></p>
+              </div>
+              <div class="card">
+                <img src="img/DIET.jpg"style="width:100%" class="cardimage">
+                <h3>Diet</h3>
+                <p class="price">$19.99</p>
+                <p>100 Unidades</p>
+                <p><button>COMPRAR</button></p>
+              </div>
+              <div class="card">
+                <img src="img/LIGHT.jpg"style="width:100%" class="cardimage">
+                <h3>Light</h3>
+                <p class="price">$19.99</p>
+                <p>100 Unidades</p>
+                <p><button>COMPRAR</button></p>
+              </div>
         </div>
 
+        <center>
+            <div class="slide-content" style="max-width:1000px">
+              <img class="Slides" src="img/melhores doces da regiao.jpg" style="width:100%">
+              <img class="Slides" src="img/nossos doces.jpg" style="width:100%">
+              <img class="Slides" src="img/promocao do dia.jpg" style="width:100%">
+            </div>
+            <br>
+            <div class="slide-center">
+              <div class="slide-section">
+                <button class="slide-button" onclick="plusDivs(-1)">❮ Prev</button>
+                <button class="slide-button" onclick="plusDivs(1)">Next ❯</button>
+              </div>
+              <br>
+              <button class="slide-123button demo" onclick="currentDiv(1)">1</button> 
+              <button class="slide-123button demo" onclick="currentDiv(2)">2</button> 
+              <button class="slide-123button demo" onclick="currentDiv(3)">3</button> 
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function currentDiv(n) {
+              showDivs(slideIndex = n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("Slides");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" slide-red", "");
+              }
+              x[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " slide-red";
+            }
+            </script>
+          </center>
+
+          <br><br>
 
         <div>
            <center> <h1 id="sob">Sobre Nós</h1>
