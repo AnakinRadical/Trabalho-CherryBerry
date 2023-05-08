@@ -54,7 +54,7 @@
             <img src="Img/CB Logo sem fundo.png" id="logo--1" />
         </section>
     </div>
-    
+
 
     <div class="produtos--container">
         <div class="produtos">
@@ -62,37 +62,156 @@
         <h1 id="doces">DOCES</h1>
         <br>
         <div class="produtos">
+
             <div class="card">
                 <img src="img/BRIGADEIRO 1.jpg"style="width:100%" class="cardimage">
                 <h3>Brigadeiro</h3>
                 <p class="price">R$ 65,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">VEJA MAIS</a></button></p>
+                <p><button id="myBtn">VEJA MAIS</button></p>
               </div>
+
+              <div id="myModal" class="modal">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Brigadeiros</h2>
+                  </div>
+                  <div class="modal-body">
+                  <div class = "quantidade">
+                    <p class="subtitulomod">Recheios:</p>
+                    <ul>
+                    <li>Nenhum</li>
+                    <li>Uva verde</li>
+                    <li>Morango</li>
+                    <li>Banana</li>
+                    </ul>
+                    </div>
+                   
+                    <div class="quantidade">
+                      <p class="quantidade" class="subtitulomod">Quantidades:</p>
+                      <ul>
+                    <li>10 Unidades -- R$15,00</li>
+                    <li>20 Unidades -- R$28,00</li>
+                    <li>50 Unidades -- R$40,00</li>
+                    <li>100 Unidades -- R$65,00</li>
+                    </ul>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="modalbttn"><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
+                      target="_blank" class="modalbttn">Comprar</a></button>
+                  </div>
+                </div>
+              </div>
+
+              <script>
+     
+                var modal = document.getElementById("myModal");
+                
+                var btn = document.getElementById("myBtn");
+          
+                var span = document.getElementsByClassName("close")[0];
+                
+                btn.onclick = function() {
+                  modal.style.display = "block";
+                }
+                
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+                
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                }
+                </script>
+
               <div class="card">
                 <img src="img/BEIJINHO.png"style="width:100%" class="cardimage">
                 <h3>Beijinho</h3>
-                <p class="price">R$ 65,00</p>
+                <p class="price">R$65,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">VEJA MAIS</a></button></p>
+                <p><button id="myBtn1">VEJA MAIS</button></p>
               </div>
+
+              <div id="myModal1" class="modal">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Beijinho</h2>
+                  </div>
+                  <div class="modal-body">
+                  <div class = "quantidade">
+                    <p class="subtitulomod">Recheios:</p>
+                    <ul>
+                    <li>Nenhum</li>
+                    <li>Uva verde</li>
+                    <li>Morango</li>
+                    <li>Banana</li>
+                    </ul>
+                    </div>
+                   
+                    <div class="quantidade">
+                      <p class="quantidade" class="subtitulomod">Quantidades:</p>
+                      <ul>
+                        <li>10 Unidades -- R$15,00</li>
+                        <li>20 Unidades -- R$28,00</li>
+                        <li>50 Unidades -- R$40,00</li>
+                        <li>100 Unidades -- R$65,00</li>
+                    </ul>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="modalbttn"><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
+                      target="_blank">Comprar</a></button>
+                  </div>
+                </div>
+              </div>
+
+              <script>
+     
+                var modal = document.getElementById("myModal1");
+                
+                var btn = document.getElementById("myBtn1");
+          
+                var span = document.getElementsByClassName("close")[1];
+                
+                btn.onclick = function() {
+                  modal.style.display = "block";
+                }
+                
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+                
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                }
+                </script>
+
               <div class="card">
                 <img src="img/CAJUZINHO.jpg"style="width:100%" class="cardimage">
                 <h3>Cajuzinho</h3>
                 <p class="price">R$ 130,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">VEJA MAIS</a></button></p>
+                <p><button id="myModal">VEJA MAIS</button></p>
               </div>
+            
+
               <div class="card">
                 <img src="img/BICHO DE PÉ.jpg"style="width:100%" class="cardimage">
                 <h3>Bicho de Pé</h3>
                 <p class="price">R$ 70,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">VEJA MAIS</a></button></p>
+                <p><button>VEJA MAIS</button></p>
+
+
               </div>
               <div class="card">
                 <img src="img/CAMAFEU.jpg"style="width:100%" class="cardimage">
