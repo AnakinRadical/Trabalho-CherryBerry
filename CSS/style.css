@@ -59,6 +59,9 @@ h3{
     color: #b37a7a;;
 }
 
+#doces{
+  position: center;
+}
 .container--header {
     position: fixed;
     background-image: url(/Img/fundo.jpg);
