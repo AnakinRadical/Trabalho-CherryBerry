@@ -8,6 +8,7 @@
     <link rel="icon" href="Img/CB logo red.png">
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="/CSS/response.css">
+    <link rel="stylesheet" href="/JS/javas.js">
 </head>
 <body>
   
@@ -56,6 +57,54 @@
         </section>
     </div>
 
+    <br><br>
+
+    <center>
+      <div class="slide-content" style="max-width:1000px">
+        <img class="Slides" src="img/Promoção do dia.png" style="width:100%">
+        <img class="Slides" src="img/Dia das mães.png" style="width:100%">
+        <img class="Slides" src="img/Um docinho para relaxar.png" style="width:100%">
+      </div>
+      <br>
+      <div class="slide-center">
+        <div class="slide-section">
+          <button class="slide-button" onclick="plusDivs(-1)">❮ Prev</button>
+          <button class="slide-button" onclick="plusDivs(1)">Next ❯</button>
+        </div>
+        <br>
+      </div>
+
+
+
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("Slides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" slide-red", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " slide-red";
+      }
+      </script>
+    </center>
 
     <div class="produtos--container">
         <div class="produtos">
@@ -77,7 +126,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <span class="close">&times;</span>
-                    <h2>Brigadeiros</h2>
+                    <h2>Brigadeiro</h2>
                   </div>
                   <div class="modal-body">
                   <div class = "quantidade">
@@ -107,28 +156,7 @@
                 </div>
               </div>
 
-              <script>
-     
-                var modal = document.getElementById("myModal");
-                
-                var btn = document.getElementById("myBtn");
-          
-                var span = document.getElementsByClassName("close")[0];
-                
-                btn.onclick = function() {
-                  modal.style.display = "block";
-                }
-                
-                span.onclick = function() {
-                  modal.style.display = "none";
-                }
-                
-                window.onclick = function(event) {
-                  if (event.target == modal) {
-                    modal.style.display = "none";
-                  }
-                }
-                </script>
+              <script src="/JS/javas.js"></script>
 
               <div class="card">
                 <img src="img/BEIJINHO.png"style="width:100%" class="cardimage">
@@ -143,7 +171,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <span class="close">&times;</span>
-                    <h2>Beijinhos</h2>
+                    <h2>Beijinho</h2>
                   </div>
                   <div class="modal-body">
                   <div class = "quantidade">
@@ -169,39 +197,21 @@
                   <div class="modal-footer">
                     <button class="modalbttn"><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
                       target="_blank">Comprar</a></button>
+                      <script src="/JS/javas.js"></script>
                   </div>
                 </div>
               </div>
 
-              <script>
-     
-                var modal = document.getElementById("myModal1");
-                
-                var btn = document.getElementById("myBtn1");
-          
-                var span = document.getElementsByClassName("close")[1];
-                
-                btn.onclick = function() {
-                  modal.style.display = "block";
-                }
-                
-                span.onclick = function() {
-                  modal.style.display = "none";
-                }
-                
-                window.onclick = function(event) {
-                  if (event.target == modal) {
-                    modal.style.display = "none";
-                  }
-                }
-                </script>
+              
 
               <div class="card">
                 <img src="img/CAJUZINHO.jpg"style="width:100%" class="cardimage">
                 <h3>Cajuzinho</h3>
                 <p class="price">R$ 130,00</p>
                 <p>100 Unidades</p>
-                <p><button id="myModal">COMPRAR</button></p>
+                <p><button><a href="PRODUTOS/cajuzinho.html"
+                  target="_blank">VEJA MAIS</a></button></p>
+
               </div>
             
 
@@ -210,7 +220,8 @@
                 <h3>Bicho de Pé</h3>
                 <p class="price">R$ 70,00</p>
                 <p>100 Unidades</p>
-                <p><button>COMPRAR</button></p>
+                <p><button><a href="PRODUTOS/bichodepe.html"
+                  target="_blank">VEJA MAIS</a></button></p>
 
 
               </div>
@@ -219,8 +230,8 @@
                 <h3>Camafeu</h3>
                 <p class="price">R$ 170,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <<p><button><a href="PRODUTOS/Camafeu.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
         </div>
         <div class="produtos">
@@ -229,40 +240,40 @@
                 <h3>Quindim</h3>
                 <p class="price">R$ 350,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Quindim.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/PUDIM.jpg"style="width:100%" class="cardimage">
                 <h3>Pudim</h3>
                 <p class="price">R$ 180,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Pudim.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/TRUFAS.jpg"style="width:100%" class="cardimage">
                 <h3>Trufas</h3>
                 <p class="price">R$ 110,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Trufas.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/CASADINHO.jpg"style="width:100%" class="cardimage">
                 <h3>Casadinho</h3>
                 <p class="price">R$ 90,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Casadinho.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/OLHO DE SOGRA.jpg"style="width:100%" class="cardimage">
                 <h3>Olho de Sogra</h3>
                 <p class="price">R$ 225,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/olhosogra.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
         </div>
 
@@ -277,40 +288,40 @@
                 <h3>Coxinha de Frango</h3>
                 <p class="price">R$ 55,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/coxinha.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/EMPADINHA 1.jpg"style="width:100%" class="cardimage">
                 <h3>Empadinha de Frango</h3>
                 <p class="price">R$ 70,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/empadinha.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/QUIBE.jpg"style="width:100%" class="cardimage">
                 <h3>Quibe</h3>
                 <p class="price">R$ 55,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Quibe.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/ESFIRRA 1.jpg"style="width:100%" class="cardimage">
                 <h3>Esfirra de Frango</h3>
                 <p class="price">R$ 70,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Esfirra.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/RISSOLE.jpg"style="width:100%">
                 <h3>Rissole</h3>
                 <p class="price">R$ 55,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Rissole.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
         </div>
         <div class="produtos">
@@ -319,39 +330,40 @@
                 <h3>Croquete</h3>
                 <p class="price">R$ 55,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Croquete.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/ENROLADINHO PRESUNTO E QUEIJO.jpg"style="width:100%" class="cardimage">
                 <h3>Enroladinho de Presunto e Queijo</h3>
                 <p class="price">R$ 85,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/EnroladinhoPresunto.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/ENROLADINHO SALSICHA.jpg"style="width:100%" class="cardimage">
                 <h3>Enroladinho de Salsicha</h3>
                 <p class="price">R$ 75,00</p>
                 <p>100 Unidades</p>
-                <p><button>COMPRAR</button></p>
+                <p><button><a href="PRODUTOS/EnroladinhoSalsicha.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/PASTELZINHO.jpg"style="width:100%" class="cardimage">
-                <h3>Pastelzinho</h3>
-                <p class="price">R$ 55,00</p>
+                <h3>Pastelzinho de carne</h3>
+                <p class="price">R$50,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Pastelzinho.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/BOLINHA DE QUEIJO 1.jpg"style="width:100%" class="cardimage">
                 <h3>Bolinha de Queijo</h3>
                 <p class="price">R$ 55,00</p>
                 <p>100 Unidades</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/BolinhaQueijo.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
         </div>
 
@@ -366,40 +378,40 @@
                 <h3>Chocolate</h3>
                 <p class="price">R$ 54,00</p>
                 <p>1 Unidade</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Chocolate.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/MORANGO.jpg"style="width:100%" class="cardimage">
                 <h3>Morango</h3>
                 <p class="price">R$ 55,00</p>
                 <p>1 Unidade</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Morango.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/CENOURA.jpg"style="width:100%" class="cardimage">
                 <h3>Cenoura</h3>
                 <p class="price">R$ 40,00</p>
                 <p>1 Unidade</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Cenoura.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/RED VELVET.jpg"style="width:100%" class="cardimage">
                 <h3>Red Velvet</h3>
                 <p class="price">R$ 110,00</p>
                 <p>1 Unidade</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/RedVelvet.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/FORMIGUEIRO.jpg"style="width:100%" class="cardimage">
                 <h3>Formigueiro</h3>
                 <p class="price">R$ 45,00</p>
                 <p>1 Unidade</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Formigueiro.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
         </div>
         <div class="produtos">
@@ -408,40 +420,40 @@
                 <h3>Laranja</h3>
                 <p class="price">R$ 40,00</p>
                 <p>1 Unidade</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Laranja.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/COCO.png"style="width:100%" class="cardimage">
                 <h3>Coco</h3>
                 <p class="price">R$ 54,00</p>
                 <p>1 Unidade</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Coco.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/LIMÃO.jpg"style="width:100%" class="cardimage">
                 <h3>Limão</h3>
                 <p class="price">R$ 54,00</p>
                 <p>1 Unidade</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Limao.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/CUPCAKE.jpg"style="width:100%" class="cardimage">
                 <h3>Cup Cake</h3>
                 <p class="price">R$ 35,00</p>
                 <p>12 Unidade</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/CupCake.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/BOLO SALGADO.jpg"style="width:100%" class="cardimage">
                 <h3>Salgado</h3>
                 <p class="price">R$ 120,00</p>
                 <p>1 Unidade</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Salgado.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
         </div>
 
@@ -457,102 +469,60 @@
                 <h3>Vegano</h3>
                 <p class="price">R$ 40,00</p>
                 <p>1 Unidade</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Vegano.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/DIET.jpg"style="width:100%" class="cardimage">
                 <h3>Diet</h3>
                 <p class="price">R$ 45,00</p>
                 <p>1 Unidade</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/Diet.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
               <div class="card">
                 <img src="img/LIGHT.jpg"style="width:100%" class="cardimage">
                 <h3>Light</h3>
                 <p class="price">R$ 40,00</p>
                 <p>1 Unidade</p>
-                <p><button><a href="https://wa.me/qr/QZ2P5GAN7XYKF1"
-                    target="_blank">COMPRAR</a></button></p>
+                <p><button><a href="PRODUTOS/cajuzinho.html"
+                  target="_blank">VEJA MAIS</a></button></p>
               </div>
         </div>
-
-        <center>
-            <div class="slide-content" style="max-width:1000px">
-              <img class="Slides" src="img/Promoção do dia.png" style="width:100%">
-              <img class="Slides" src="img/Dia das mães.png" style="width:100%">
-              <img class="Slides" src="img/Um docinho para relaxar.png" style="width:100%">
-            </div>
-            <br>
-            <div class="slide-center">
-              <div class="slide-section">
-                <button class="slide-button" onclick="plusDivs(-1)">❮ Prev</button>
-                <button class="slide-button" onclick="plusDivs(1)">Next ❯</button>
-              </div>
-              <br>
-            </div>
-            
-            <script>
-            var slideIndex = 1;
-            showDivs(slideIndex);
-            
-            function plusDivs(n) {
-              showDivs(slideIndex += n);
-            }
-            
-            function currentDiv(n) {
-              showDivs(slideIndex = n);
-            }
-            
-            function showDivs(n) {
-              var i;
-              var x = document.getElementsByClassName("Slides");
-              var dots = document.getElementsByClassName("demo");
-              if (n > x.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = x.length}
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" slide-red", "");
-              }
-              x[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " slide-red";
-            }
-            </script>
-          </center>
 
           <br><br>
 
-        <div>
-           <center> <h1 id="sob">Sobre Nós</h1>
-            <p>
-                A CherryBerry é uma confeitaria que encanta com suas delícias e decoração charmosa. <br>
-                Localizada em um bairro movimentado da cidade, a CherryBerry 
-                é um lugar perfeito para um café da manhã, um lanche rápido ou um doce 
-                final para uma noite especial.
-            </p>
-            <p>
-                A CherryBerry é um lugar perfeito para quem procura uma confeitaria charmosa e aconchegante, 
-                com uma variedade de doces e salgados saborosos. <br>
-                Se você ainda não conhece, não perca a oportunidade de visitá-la e se deliciar com suas delícias!
-            </p>
-        </div></center>
-        
-        <br>
-        <br>
-        <div>
-            <center>
-                <h1 id="cont">Informações Para Contato</h1>
-            Avenida Dr. Padre Lourenço <br>
-            E-mail: cherryberryconfeitaria@gmail.Com <br>
-            Telefone: 3622-0000 <br><br>
-                <a class="container" href="https://wa.me/qr/QZ2P5GAN7XYKF1" target="_blank">
-                    <img src="Img/Botao WhatsApp.png" alt=""></a>
-        </center>
-        </div>
-    </div>
+
+
+          <div>
+            <center> <h1 id="sob">Sobre Nós</h1> <br>
+             <p>
+                 A CherryBerry é uma confeitaria que encanta com suas delícias e decoração charmosa. <br>
+                 Localizada em um bairro movimentado da cidade, a CherryBerry 
+                 é um lugar perfeito para um café da manhã, um lanche rápido ou um doce 
+                 final para uma noite especial.
+             </p>
+             <p>
+                 A CherryBerry é um lugar perfeito para quem procura uma confeitaria charmosa e aconchegante, 
+                 com uma variedade de doces e salgados saborosos. <br>
+                 Se você ainda não conhece, não perca a oportunidade de visitá-la e se deliciar com suas delícias!
+             </p>
+         </div></center>
+         
+         <br>
+         <br>
+         <div>
+             <center>
+                 <h1 id="cont">Informações Para Contato</h1> <br>
+             Avenida Dr. Padre Lourenço <br>
+             E-mail: cherryberryconfeitaria@gmail.Com <br>
+             Telefone: 3622-0000 <br><br>
+         </center>
+         </div>
+         <a class="container" href="https://wa.me/qr/QZ2P5GAN7XYKF1" target="_blank">
+          <img src="/Img/Botao WhatsApp.png" alt=""></a>
+     </div>
+     
 
  
 
