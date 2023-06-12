@@ -16,7 +16,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-    background-color: rgb(167, 226, 255);
+    background-color: white;
     margin: 0px;
 }
 
@@ -160,22 +160,6 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.slide-button{
-    border-radius: 5px;
-    border: none;
-    background-color: #863D3D;
-    color: rgb(235, 248, 255);
-    width: 65px;
-    padding: 10px;
-}
-
-
-
-.Slides{
-    border-radius: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.123);
 }
 
 .dropbtn {
@@ -353,31 +337,19 @@ a {
   }
 
 
- 
-
-
-
-  * {box-sizing: border-box;}
+  * {box-sizing: border-box;
+    border-radius: 30px;
+  }
   body {font-family: Verdana, sans-serif;}
   .mySlides {display: none;}
   img {vertical-align: middle;}
   
-  /* Slideshow container */
+
   .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
+    border-radius: 15px;
   }
   
 
@@ -410,4 +382,8 @@ a {
 
   footer .container{
     position: relative;
+}
+
+.mySlides{
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.312);
 }
