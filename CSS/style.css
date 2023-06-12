@@ -337,22 +337,23 @@ a {
   }
 
 
-  * {box-sizing: border-box;
+
+  
+  .mySlides {
+    display: none;
     border-radius: 30px;
   }
-  body {font-family: Verdana, sans-serif;}
-  .mySlides {display: none;}
-  img {vertical-align: middle;}
-  
 
+  img {
+    vertical-align: middle;
+  }
+  
   .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
-    border-radius: 15px;
   }
   
-
   .dot {
     height: 15px;
     width: 15px;
@@ -369,7 +370,9 @@ a {
   
 
   @media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
+    .text {
+      font-size: 11px
+    }
   }
 
   footer{
@@ -386,4 +389,9 @@ a {
 
 .mySlides{
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.312);
+}
+
+.sliderimg{
+  box-sizing: border-box;
+  border-radius: 30px;
 }
